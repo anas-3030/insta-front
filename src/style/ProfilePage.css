@@ -1,0 +1,11 @@
+/* Ensure the Sidebar does not overlap the ProfileLayout */
+.profile-layout {
+  padding-left: 55px /* Adjust as necessary to ensure space between sidebar and content */
+  }
+  
+  @media (max-width: 767px) {
+    .profile-layout {
+      padding-left: 0;
+    }
+  }
+  

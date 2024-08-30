@@ -1,0 +1,321 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: #fafafa;
+}
+
+/* Profile Header */
+.profile__header {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Logo */
+.profile__logo img {
+  width: 150px;
+  object-fit: contain;
+}
+
+/* Search Bar */
+.profile__searchBar input[type=text] {
+  width: 300px;
+  background-color: #efefef;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Settings */
+.profile__settings {
+  display: flex;
+}
+
+.profile__settings button {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border: none;
+}
+
+.profile__settings button svg,
+.profile__settings img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.profile__settings img {
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+/* Profile Section */
+.profile__profile {
+  margin-top: 150px; /* Adjusted for fixed header */
+  margin-bottom: 30px;
+}
+.profile__profile__details{
+  margin-left: 101px;
+}
+.profile__profile__logo img {
+  width: 150px;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 3px solid black;
+}
+
+.profile__profile__details__userName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile__profile__details__userName h4 {
+  font-weight: normal;
+}
+
+.profile__profile__details__userName button {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.profile__profile__details__userName button:last-child {
+  border: none;
+}
+.profile__profile__logo img {
+  width: 150px;
+  height: 150px; /* Ensure the height matches the width */
+  object-fit: cover; /* This will ensure the image covers the container without distortion */
+  border-radius: 50%; /* This will make the image a circle */
+  border: 3px solid black;
+}
+/* Follower Section */
+.profile__profile__details__follower {
+  display: flex;
+  gap: 20px;
+}
+
+.profile__profile__details__displayName{
+  padding-top: 17px;
+}
+.profile__profile__details__follower button {
+  background-color: transparent;
+  border: none;
+  margin-left: 40px;
+}
+
+/* Section Tabs */
+.profile__section__tab {
+  overflow: hidden;
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile__section__tab button {
+  background-color: transparent;
+  border: none;
+  padding: 20px 0 0;
+  margin: 0 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #8e8e8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.profile__section__tab button svg {
+  margin-right: 5px;
+}
+
+.profile__section__tab .active {
+  border-top: 2px solid #5c5c5c;
+  color: #5c5c5c;
+}
+
+/* Tab Content */
+.profile__section__tab__tabcontent__container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.profile__section__tab__tabcontent__container__image {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0px;
+  padding: 0px;
+}
+
+.profile__section__tab__tabcontent__container__image .post {
+  position: relative;
+  border: 2px solid #dbdbdb;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* Adjust this height for desired grid size */
+  width: auto;
+}
+
+.profile__section__tab__tabcontent__container__image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Post Overlay */
+.post-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.post-content {
+  background: white;
+  padding: 2px;
+  max-width: 500px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* modal css */
+.post-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.post-modal-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.post-modal img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-modal-caption {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.post-modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+
+/* Modal overlay */
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.edit-profile-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Button styles */
+.edit-profile-btn {
+  background-color: #0095f6;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-profile-btn:hover {
+  background-color: #007bb5;
+  color: rgb(255, 255, 255);
+}
+
+.follow-btn {
+  background-color: #0095f6;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.follow-btn.not-following {
+  background-color: #0095f6;
+  color: white;
+}
+
+.follow-btn.following {
+  background-color: #c4c4c4;
+  color: #000;
+}
+
+.follow-btn.loading {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+}
+
+.follow-btn:hover:not(.loading) {
+  background-color: #007bb5;
+}

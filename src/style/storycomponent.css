@@ -1,0 +1,62 @@
+.stories-container {
+  background-color: #ffffff;
+  padding: 10px;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.stories-wrapper {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.story-circle {
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Ensure the username is below the image */
+  align-items: center; /* Center content horizontally */
+}
+
+.story-circle_addstory {
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-circle img {
+  border-radius: 50%;
+}
+
+.story-username {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: #333; /* Ensure the color is dark enough for visibility */
+  font-size: 12px;
+}
+
+.stories-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}

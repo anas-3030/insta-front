@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #dbdbdb;
+}
+
+.sidebar .items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #262626;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #f9f9f9;
+}
+
+.sidebar .nav-link .me-2 {
+  margin-right: 10px;
+}
+
+/* Hide text on smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar .nav-link span {
+    display: none;
+  }
+}
